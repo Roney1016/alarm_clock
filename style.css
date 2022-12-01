@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body,
+.wrapper,
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(41, 155, 197);
+}
+
+.wrapper {
+    width: 440px;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 30px 30px 30px 40px;
+}
+
+.wrapper img {
+    max-width: 100px;
+
+}
+
+.wrapper h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.wrapper .content {
+    width: 100%;
+    /* display: flex;( already diclear flex ) in body,.wrapper,.content{} */
+    justify-content: space-around;
+
+}
+
+.content .colum {
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid black;
+    width:25%;
+
+    
+}
+
+.colum select{
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.wrapper button{
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    font-size:20px ;
+    color: beige;
+    font-weight: bolder;
+    padding:15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.wrapper .content.disable{
+    opacity: 0.6;
+    pointer-events: none;
+}
